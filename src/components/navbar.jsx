@@ -4,6 +4,7 @@ import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outli
 
 const navigation = [
     { name: 'Home', href: '/' },
+    { name: 'Projects', href: '/' },
     { name: 'Publications', href: '#' },
     { name: 'About Us', href: '#' },
 ]
@@ -14,13 +15,13 @@ function classNames(...classes) {
 
 export default function Navbar() {
     return (
-        <Disclosure as="nav" className="bg-zinc-800 sticky top-0 after:bg-black z-50 w-screen after:h-px after:w-full after:block">
+        <Disclosure as="nav" className="bg-blue-800 sticky top-0 after:bg-black z-50 w-screen after:h-px after:w-full after:block">
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-zinc-400 hover:bg-zinc-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                <Disclosure.Button className="relative inline-flex transition duration-300 items-center justify-center rounded-md p-2 text-blue-200 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="absolute -inset-0.5" />
                                     <span className="sr-only">Open main menu</span>
                                     {open ? (
@@ -30,7 +31,7 @@ export default function Navbar() {
                                     )}
                                 </Disclosure.Button>
                             </div>
-                            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                            <div className="flex flex-1 items-center justify-center sm:justify-start">
                                 {/* VR Lab logo */}
                                 <div className="flex flex-shrink-0 items-center">
                                     <img
@@ -38,15 +39,16 @@ export default function Navbar() {
                                         src="/logo.png"
                                         alt="VR Lab logo"
                                     />
+                                    <p className='text-blue-100 mx-8 text-md font-semibold'>ITU Virtuality Labs</p>
                                 </div>
 
                                 {/* div for large screen navbar */}
-                                <div className="hidden sm:ml-6 sm:block">
+                                <div className="hidden sm:absolute sm:right-0 sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => {
                                             return (item.hasOwnProperty('subitems')) ?
                                                 <Menu as='div' key={item.name} className="relative">
-                                                    <Menu.Button className={'text-zinc-300 hover:bg-zinc-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}>
+                                                    <Menu.Button className={'text-blue-200 transition duration-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}>
                                                         <div>
                                                             {item.name}
                                                             <ChevronDownIcon className='-mr-1 ml-2 h-4 w-4 inline' aria-hidden='true' />
@@ -66,7 +68,7 @@ export default function Navbar() {
                                                                         {({ active }) => (
                                                                             <a
                                                                                 href={subitem.href}
-                                                                                className={classNames(active ? 'bg-zinc-100' : '', 'block px-4 py-2 text-sm text-start font-normal text-zinc-700')}
+                                                                                className={classNames(active ? 'bg-blue-100' : '', 'block px-4 py-2 text-sm text-start font-normal text-blue-700')}
                                                                             >
                                                                                 {subitem.name}
                                                                             </a>
@@ -81,7 +83,7 @@ export default function Navbar() {
                                                 : <a
                                                     key={item.name}
                                                     href={item.href}
-                                                    className={'text-zinc-300 hover:bg-zinc-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
+                                                    className={'text-blue-200 transition duration-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
                                                     aria-current={item.current ? 'page' : undefined}
                                                 >
                                                     {item.name}
@@ -94,16 +96,16 @@ export default function Navbar() {
                             {/* <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <button
                                     type="button"
-                                    className="relative rounded-full bg-zinc-800 p-1 text-zinc-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-zinc-800"
+                                    className="relative rounded-full bg-blue-800 p-1 text-blue-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-800"
                                 >
                                     <span className="absolute -inset-1.5" />
                                     <span className="sr-only">View notifications</span>
-                                    <BellIcon className="h-6 w-6 bg-zinc-800 text-zinc-400" aria-hidden="true" />
+                                    <BellIcon className="h-6 w-6 bg-blue-800 text-blue-400" aria-hidden="true" />
                                 </button>
 
                                 <Menu as="div" className="relative ml-3">
                                     <div>
-                                        <Menu.Button className="relative flex rounded-full bg-zinc-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-zinc-800">
+                                        <Menu.Button className="relative flex rounded-full bg-blue-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-800">
                                             <span className="absolute -inset-1.5" />
                                             <span className="sr-only">Open user menu</span>
                                             <img
@@ -127,7 +129,7 @@ export default function Navbar() {
                                                 {({ active }) => (
                                                     <a
                                                         href="/editprofile"
-                                                        className={classNames(active ? 'bg-zinc-100' : '', 'block px-4 py-2 text-sm text-zinc-700')}
+                                                        className={classNames(active ? 'bg-blue-100' : '', 'block px-4 py-2 text-sm text-blue-700')}
                                                     >
                                                         Edit Your Profile
                                                     </a>
@@ -137,7 +139,7 @@ export default function Navbar() {
                                                 {({ active }) => (
                                                     <a
                                                         href="#"
-                                                        className={classNames(active ? 'bg-zinc-100' : '', 'block px-4 py-2 text-sm text-zinc-700')}
+                                                        className={classNames(active ? 'bg-blue-100' : '', 'block px-4 py-2 text-sm text-blue-700')}
                                                     >
                                                         Settings
                                                     </a>
@@ -147,7 +149,7 @@ export default function Navbar() {
                                                 {({ active }) => (
                                                     <a
                                                         href="#"
-                                                        className={classNames(active ? 'bg-zinc-100' : '', 'block px-4 py-2 text-sm text-zinc-700')}
+                                                        className={classNames(active ? 'bg-blue-100' : '', 'block px-4 py-2 text-sm text-blue-700')}
                                                     >
                                                         Sign out
                                                     </a>
@@ -168,7 +170,7 @@ export default function Navbar() {
                                     <Disclosure.Button
                                         as={item.hasOwnProperty('subitems') ? "div" : "a"}
                                         href={item.href}
-                                        className={'text-zinc-300 hover:bg-zinc-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium cursor-pointer'}
+                                        className={'text-blue-200 transition duration-300 hover:bg-blue-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium cursor-pointer'}
                                         aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}
@@ -184,7 +186,7 @@ export default function Navbar() {
                                                         key={subitem.name}
                                                         as={subitem.hasOwnProperty('subitems') ? "div" : "a"}
                                                         href={subitem.href}
-                                                        className='text-zinc-300 hover:bg-zinc-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'
+                                                        className='text-blue-200 transition duration-300 hover:bg-blue-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'
                                                     >
                                                         {subitem.name}
                                                     </Disclosure.Button>
