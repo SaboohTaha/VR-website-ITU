@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '~video-react/dist/video-react.css';
+
+@layer components {
+  .home-gradient {
+    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  }
+}
 
 body {
   margin: 0;
