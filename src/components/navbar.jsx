@@ -4,9 +4,8 @@ import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outli
 
 const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Projects', href: '/' },
-    { name: 'Publications', href: '#' },
-    { name: 'About Us', href: '#' },
+    { name: 'Our Team', href: '/team' },
+    { name: 'About Us', href: '/aboutus' },
 ]
 
 function classNames(...classes) {
@@ -18,7 +17,7 @@ export default function Navbar() {
         <Disclosure as="nav" className="bg-blue-800 sticky sm:px-20 top-0 z-50 w-screen">
             {({ open }) => (
                 <>
-                    <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                    <div className="mx-auto max-w-[100rem] px-2 sm:px-6 lg:px-8">
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 <Disclosure.Button className="relative inline-flex transition duration-300 items-center justify-center rounded-md p-2 text-blue-200 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
