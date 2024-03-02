@@ -32,6 +32,12 @@ export default function Home() {
         Image: "/Images/team/Omer.jpeg",
         Role: "Lab Lead",
         Additionals: [{ subrole: "Final Year CS Student" }]
+    },
+    {
+        Name: "Husnain Ali",
+        Image: "/Images/team/Husnain.jpeg",
+        Role: "Lab Lead",
+        Additionals: [{ subrole: "Final Year CS Student" }]
     }
     ]
 

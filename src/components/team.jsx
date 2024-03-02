@@ -1,5 +1,3 @@
-import { Fragment } from "react"
-
 export default function Team() {
     const team_info = [{
         Name: "Dr Ibrahim Ghaznavi",
@@ -28,6 +26,12 @@ export default function Team() {
     {
         Name: "Muhammad Omer Nawaz",
         Image: "/Images/team/Omer.jpeg",
+        Role: "Lab Lead",
+        Additionals: [{ subrole: "Final Year CS Student" }]
+    },
+    {
+        Name: "Husnain Ali",
+        Image: "/Images/team/Husnain.jpeg",
         Role: "Lab Lead",
         Additionals: [{ subrole: "Final Year CS Student" }]
     }
