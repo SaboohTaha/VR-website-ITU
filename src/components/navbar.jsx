@@ -22,7 +22,7 @@ export default function Navbar() {
                     <div className="mx-auto max-w-[100rem] px-2 lg:px-6 xl:px-8">
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
-                                <Disclosure.Button className="relative inline-flex transition duration-300 items-center justify-center rounded-md p-2 text-blue-200 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                <Disclosure.Button className="relative inline-flex transition duration-300 items-center justify-center rounded-md p-2 text-blue-100 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="absolute -inset-0.5" />
                                     <span className="sr-only">Open main menu</span>
                                     {open ? (
@@ -49,7 +49,7 @@ export default function Navbar() {
                                         {navigation.map((item) => {
                                             return (item.hasOwnProperty('subitems')) ?
                                                 <Menu as='div' key={item.name} className="relative">
-                                                    <Menu.Button className={'text-blue-200 transition duration-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}>
+                                                    <Menu.Button className={'text-blue-100 transition duration-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}>
                                                         <div>
                                                             {item.name}
                                                             <ChevronDownIcon className='-mr-1 ml-2 h-4 w-4 inline' aria-hidden='true' />
@@ -84,7 +84,7 @@ export default function Navbar() {
                                                 : <a
                                                     key={item.name}
                                                     href={item.href}
-                                                    className={'text-blue-200 transition duration-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
+                                                    className={'text-blue-100 transition duration-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
                                                     aria-current={item.current ? 'page' : undefined}
                                                 >
                                                     {item.name}
@@ -171,7 +171,7 @@ export default function Navbar() {
                                     <Disclosure.Button
                                         as={item.hasOwnProperty('subitems') ? "div" : "a"}
                                         href={item.href}
-                                        className={'text-blue-200 transition duration-300 hover:bg-blue-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium cursor-pointer'}
+                                        className={'text-blue-100 transition duration-300 hover:bg-blue-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium cursor-pointer'}
                                         aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}
@@ -187,7 +187,7 @@ export default function Navbar() {
                                                         key={subitem.name}
                                                         as={subitem.hasOwnProperty('subitems') ? "div" : "a"}
                                                         href={subitem.href}
-                                                        className='text-blue-200 transition duration-300 hover:bg-blue-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'
+                                                        className='text-blue-100 transition duration-300 hover:bg-blue-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'
                                                     >
                                                         {subitem.name}
                                                     </Disclosure.Button>
