@@ -11,7 +11,7 @@ import Projects from './components/projects';
 function App() {
   return (
     <>
-      <div className='flex-1'>
+      <div className='flex-grow'>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
