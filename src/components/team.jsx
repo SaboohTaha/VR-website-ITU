@@ -2,13 +2,13 @@ export default function Team() {
     const team_info = [{
         Name: "Dr Ibrahim Ghaznavi",
         Image: "/Images/team/Sir Ibrahim.jfif",
-        Role: "Founding Director",
+        Role: "Director",
         Additionals: [{ subrole: "Assistant Professor" }, { subrole: "XR/Metaverse Consultant" }]
     },
     {
         Name: "Zubaira Naz",
         Image: "/Images/team/Miss Zubaira.jpg",
-        Role: "Co-Founding Director",
+        Role: "Lab Lead (Research)",
         Additionals: [{ subrole: "Teaching Fellow" }]
     },
     {

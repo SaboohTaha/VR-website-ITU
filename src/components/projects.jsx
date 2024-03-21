@@ -10,25 +10,31 @@ export default function Projects() {
         {
             name: "Beat Saber: A Rhythmic Adventure in VR",
             image: "/Images/Projects/BeatSaber.png",
-            description: "Beat Saber: A Rhythmic Adventure in VR is a VR game where players wield virtual sabers to break blocks that appear to the beat of music in different virtual environments. The game is inspired by and like Beat Saber available on Steam VR.",
+            description: "Beat Saber: A Rhythmic Adventure in VR is a VR game where players wield virtual sabers to break blocks that appear to the beat of music in different virtual environments. The game is inspired by one of the most popular games in VR called the Beat Saber available on Steam VR.",
             contributors: ["Muhammad Sabooh Taha", "Uzair Amin", "Hajira Qazi", "Syeda Minal Batool"],
+        },
+        {
+            name: "Harnessing Mixed Reality and Drones",
+            image: "/Images/Projects/VR Drone.gif",
+            description: "Revolutionizing security surveillance with our cutting-edge solution that integrates Spatial Computing and UAVs like Drone, offering unparalleled flexibility, dynamic coverage, and comprehensive monitoring capabilities to overcome the limitations of conventional CCTV systems and enhance situational awareness in real-time.",
+            contributors: ["Abdullah Mushtaq", "Aizaz ul Haq", "Muhammad Shaharyar"],
         },
         {
             name: "ITU Virtual Tour",
             image: "/Images/Projects/ITUVirtualTour.png",
-            description: "The following project is a virtual Information Technology University (ITU) tour. Users can visit ITU virtually anytime and on any platform using this project. The project consists of a tour of the old campus in Arfa Kareem Software Technology Park (ASTP) and a 3D visualization of the new campus that will soon be constructed. This project consists of an Android application comprising both VR and WebXR-based tour for ITU.",
+            description: "The following project is a virtual Information Technology University (ITU) tour. Users can visit ITU virtually anytime and on any platform. The project consists of a tour of the old campus in Arfa Kareem Software Technology Park (ASTP) and a 3D visualization of the new campus that will soon be constructed. The users can virtually tour ITU via both our Android application or WebXR.",
             contributors: ["Ibrahim Siddiqui", "Amna Akbar", "Ibrahim Khan", "Hassan Ahmed", "Abdullah Nezami"],
         },
         {
             name: "dARse",
             image: "./Images/Projects/dARse.png",
-            description: "dARse is a project that seeks to improve Pakistan’s teaching standards by helping augment schoolbooks. We have augmented Punjab Textbook Board’s Grade 5 Science textbook in the current Android application version. The application serves as a tool for teachers and students to help teach and learn scientific concepts using animated 3D models alongside audio explanations of the concept.",
+            description: "dARse is a project that seeks to making science teaching fun and interactive via harnessing augmented reality technologies. A marker-based Augmented reality android application is created, as a prototype, to make the Grade 5 science book more interactive and engaging. The application serves as a tool for teachers and students to help teach and learn scientific concepts using animated 3D models alongside audio explanations of the concept in Urdu and English languages. The project can be extended to offer illustrations in other languages such as Pushto, Sundhi and Balochi.",
             contributors: ["Maria Marrium", "Ramsha Imran", "Sadia Saeed", "Salwa Batool", "Momna Ibrahim"],
         },
         {
             name: "Space Shooter Game",
             image: "./Images/Projects/spaceshooter.jpeg",
-            description: "Space Shooter VR is a game designed on the Google Cardboard that uses remote input through any Bluetooth mouse, controller, and even a Shinecon remote. In this game, a user has to look around himself and destroy the asteroids coming towards it via the remote/controller. This game consists of three difficulties that allow people from various experiences to enjoy it and is also a look into the potential of the vast industry of VR gaming.",
+            description: "Space Shooter VR is mobileVR game based on google cardboard platform. It uses remote input through bluetooth mouse or a controller. The user has to strike the incoming asteroids via the remote/controller. This game consists of three difficulty levels: easy, medium and hard; the player can choose to make the game play more challenging by increasing its level.",
             contributors: ["Anas Mansha", "Maryam Bibi", "Omer Mansoor", "Sufian Saeed"],
         }
     ]

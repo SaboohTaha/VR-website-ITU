@@ -6,13 +6,13 @@ export default function Home() {
     const team_info = [{
         Name: "Dr Ibrahim Ghaznavi",
         Image: "/Images/team/Sir Ibrahim.jfif",
-        Role: "Founding Director",
+        Role: "Director",
         Additionals: [{ subrole: "Assistant Professor" }, { subrole: "XR/Metaverse Consultant" }]
     },
     {
         Name: "Zubaira Naz",
         Image: "/Images/team/Miss Zubaira.jpg",
-        Role: "Co-Founding Director",
+        Role: "Lab Lead (Research)",
         Additionals: [{ subrole: "Teaching Fellow" }]
     },
     {
@@ -53,10 +53,8 @@ export default function Home() {
                         </h1>
                         <p className="text-zinc-900 drop-shadow-2xl my-12 xl:my-12 lg:my-8
                                     text-justified text-base lg:text-lg font-medium">
-                            Here at the Virtuality Lab, our goal is to enhance and help improve various industries in our country through metaverse and XR technology.
-                            From creating immersive educational models to create interactive learning,
-                            to helping the medical and police department by providing them with realistic and immersive training and therapy programs,
-                            we hope that our research and work here at Virtuality Lab helps our country and the world move forward.
+                            Virtuality Labs is a research institute focused on solving locally relevant problems by
+                            harnessing immersive technologies such as Augmented Reality, Mixed Reality, and Virtual Reality.
                         </p>
                         <a href="/aboutus" className="rounded-full flex items-center justify-center
                                                     w-40 h-12 tracking-wider font-medium bg-blue-200
@@ -77,9 +75,10 @@ export default function Home() {
                     Introducing our Virtual Information Technology University (ITU) Tour
                 </div>
                 <div className="text-zinc-900 text-left drop-shadow-lg text-base lg:text-lg my-12 font-medium">
-                    Discover the ITU campus from anywhere, anytime, and on any device with our immersive project.
-                    Our platform offers a comprehensive tour of the historic Arfa Kareem Software Technology Park (ASTP) campus,
-                    as well as a captivating 3D visualization of the forthcoming state-of-the-art ITU campus.
+                    Take a virtual tour of the ITU campus from anywhere, anytime, and on any device via our website or mobile app.
+                    The immersive tour lets you visit our campus and navigate between different lecture theatres, auditoriums, libraries,
+                    cafeterias, and other facilities at the Campus. Our platform offers a comprehensive tour of the historic Arfa Kareem
+                    Software Technology Park (ASTP) campus, as well as a captivating 3D visualization of the forthcoming state-of-the-art ITU campus.
                 </div>
                 <div className="flex flex-col sm:flex-row justify-center items-center">
                     <a href="https://drive.google.com/file/d/1TVQUFfCjDD_YzwtqC6OLnpO9xVQksVMr/view?usp=sharing" className="rounded-full shadow-md duration-500 hover:bg-right hover:text-white text-zinc-900 my-5 sm:mx-10 lg:mx-20
