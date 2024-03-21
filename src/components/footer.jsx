@@ -1,9 +1,6 @@
-import { Fragment } from 'react'
-
-
 export default function Footer() {
     return <>
-        <footer className={"bg-blue-900 text-blue-100 sticky inset-x-0 bottom-0 py-4 px-10 sm:py-6 sm:px-20 lg:py-8 lg:px-32 flex flex-row flex-wrap justify-between space-x-2 space-y-6"}>
+        <footer className="bg-blue-900 text-blue-100 py-4 px-10 sm:py-6 sm:px-20 lg:py-8 lg:px-32 flex flex-row flex-wrap justify-between space-x-2 space-y-6">
             <div className="flex flex-shrink-0 items-center">
                 <img
                     className="h-8 w-auto"

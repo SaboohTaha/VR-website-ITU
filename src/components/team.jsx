@@ -1,16 +1,14 @@
-import { Fragment } from "react"
-
 export default function Team() {
     const team_info = [{
         Name: "Dr Ibrahim Ghaznavi",
         Image: "/Images/team/Sir Ibrahim.jfif",
-        Role: "Founding Director",
+        Role: "Director",
         Additionals: [{ subrole: "Assistant Professor" }, { subrole: "XR/Metaverse Consultant" }]
     },
     {
         Name: "Zubaira Naz",
         Image: "/Images/team/Miss Zubaira.jpg",
-        Role: "Co-Founding Director",
+        Role: "Lab Lead (Research)",
         Additionals: [{ subrole: "Teaching Fellow" }]
     },
     {
@@ -28,6 +26,12 @@ export default function Team() {
     {
         Name: "Muhammad Omer Nawaz",
         Image: "/Images/team/Omer.jpeg",
+        Role: "Lab Lead",
+        Additionals: [{ subrole: "Final Year CS Student" }]
+    },
+    {
+        Name: "Husnain Ali",
+        Image: "/Images/team/Husnain.jpeg",
         Role: "Lab Lead",
         Additionals: [{ subrole: "Final Year CS Student" }]
     }

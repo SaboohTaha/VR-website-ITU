@@ -5,6 +5,8 @@ import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outli
 const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Our Team', href: '/team' },
+    { name: 'Publications', href: '/publications' },
+    { name: 'Projects', href: '/projects' },
     { name: 'About Us', href: '/aboutus' },
 ]
 
@@ -14,13 +16,13 @@ function classNames(...classes) {
 
 export default function Navbar() {
     return (
-        <Disclosure as="nav" className="bg-blue-800 sticky sm:px-20 top-0 z-50 w-screen">
+        <Disclosure as="nav" className="bg-blue-600 sticky lg:px-20 top-0 z-50 w-screen">
             {({ open }) => (
                 <>
-                    <div className="mx-auto max-w-[100rem] px-2 sm:px-6 lg:px-8">
+                    <div className="mx-auto max-w-[100rem] px-2 lg:px-6 xl:px-8">
                         <div className="relative flex h-16 items-center justify-between">
-                            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                                <Disclosure.Button className="relative inline-flex transition duration-300 items-center justify-center rounded-md p-2 text-blue-200 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                            <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
+                                <Disclosure.Button className="relative inline-flex transition duration-300 items-center justify-center rounded-md p-2 text-blue-100 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="absolute -inset-0.5" />
                                     <span className="sr-only">Open main menu</span>
                                     {open ? (
@@ -30,7 +32,7 @@ export default function Navbar() {
                                     )}
                                 </Disclosure.Button>
                             </div>
-                            <div className="flex flex-1 items-center justify-center sm:justify-start">
+                            <div className="flex flex-1 items-center justify-center lg:justify-start">
                                 {/* VR Lab logo */}
                                 <div className="flex flex-shrink-0 items-center">
                                     <img
@@ -42,12 +44,12 @@ export default function Navbar() {
                                 </div>
 
                                 {/* div for large screen navbar */}
-                                <div className="hidden sm:absolute sm:right-0 sm:ml-6 sm:block">
+                                <div className="hidden lg:absolute lg:right-0 lg:ml-6 lg:block">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => {
                                             return (item.hasOwnProperty('subitems')) ?
                                                 <Menu as='div' key={item.name} className="relative">
-                                                    <Menu.Button className={'text-blue-200 transition duration-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}>
+                                                    <Menu.Button className={'text-blue-100 transition duration-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}>
                                                         <div>
                                                             {item.name}
                                                             <ChevronDownIcon className='-mr-1 ml-2 h-4 w-4 inline' aria-hidden='true' />
@@ -82,7 +84,7 @@ export default function Navbar() {
                                                 : <a
                                                     key={item.name}
                                                     href={item.href}
-                                                    className={'text-blue-200 transition duration-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
+                                                    className={'text-blue-100 transition duration-300 hover:bg-blue-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'}
                                                     aria-current={item.current ? 'page' : undefined}
                                                 >
                                                     {item.name}
@@ -162,14 +164,14 @@ export default function Navbar() {
                     </div>
 
                     {/* div for mobile screen navbar */}
-                    <Disclosure.Panel className="sm:hidden">
+                    <Disclosure.Panel className="lg:hidden">
                         <div className="space-y-1 px-2 pb-3 pt-2">
                             {navigation.map((item) => {
                                 return <Disclosure key={item.name}>
                                     <Disclosure.Button
                                         as={item.hasOwnProperty('subitems') ? "div" : "a"}
                                         href={item.href}
-                                        className={'text-blue-200 transition duration-300 hover:bg-blue-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium cursor-pointer'}
+                                        className={'text-blue-100 transition duration-300 hover:bg-blue-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium cursor-pointer'}
                                         aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}
@@ -185,7 +187,7 @@ export default function Navbar() {
                                                         key={subitem.name}
                                                         as={subitem.hasOwnProperty('subitems') ? "div" : "a"}
                                                         href={subitem.href}
-                                                        className='text-blue-200 transition duration-300 hover:bg-blue-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'
+                                                        className='text-blue-100 transition duration-300 hover:bg-blue-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'
                                                     >
                                                         {subitem.name}
                                                     </Disclosure.Button>
